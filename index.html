@@ -132,7 +132,6 @@
   }
   .btn-pill:hover{background:var(--olive-dark);transform:translateY(-2px);}
   .bio-text{max-width:460px;font-size:1.02rem;line-height:1.65;color:#3a3a30;}
-  .handle{margin-top:22px;font-weight:700;color:var(--olive-dark);}
 
   /* ---------- SECTION SCAFFOLD ---------- */
   section{position:relative;z-index:1;padding:86px 0;}
@@ -207,8 +206,10 @@
   footer{padding:60px 0 40px;}
   .foot-grid{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;}
   .foot-cta h2{font-size:clamp(1.8rem,4vw,2.6rem);}
-  .foot-links{display:flex;gap:18px;font-size:.86rem;font-weight:600;}
-  .foot-links a{text-decoration:none;border-bottom:1px solid var(--olive);}
+  .foot-links{display:flex;flex-direction:column;gap:10px;font-size:.9rem;font-weight:600;align-items:flex-end;}
+  body.ar .foot-links{align-items:flex-start;}
+  .foot-links a{text-decoration:none;border-bottom:1px solid var(--olive);display:flex;gap:8px;align-items:baseline;}
+  .foot-links .cc{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--olive-dark);font-weight:700;}
   .copyright{margin-top:40px;font-size:.78rem;color:#7a7a68;border-top:1px solid var(--rule);padding-top:20px;}
 
   [data-i18n]{}
@@ -341,7 +342,6 @@
           <a class="btn-pill" href="#contact" data-i18n="get_in_touch">Get in Touch</a>
         </div>
         <p class="bio-text" data-i18n="hero_bio">Wesam Abdelrahman Aboud is a UAE- and Oman-based entrepreneur who has founded and built five independently owned businesses spanning agricultural trade, irrigation systems, greenhouse construction, and manufacturing — beginning with a single agricultural supply company in Al Ain in 1999.</p>
-        <p class="handle">@aboudwesam</p>
       </div>
     </div>
   </section>
@@ -459,7 +459,9 @@
           <h2 class="display" data-i18n="contact_title">Let's talk business.</h2>
         </div>
         <div class="foot-links">
-          <a href="tel:+963985306883">+963 985 306 883</a>
+          <a href="tel:+963985306883"><span class="cc" data-i18n="cc_sy">Syria</span> <span dir="ltr">+963 985 306 883</span></a>
+          <a href="tel:+971522326666"><span class="cc" data-i18n="cc_ae">UAE</span> <span dir="ltr">+971 52 232 6666</span></a>
+          <a href="tel:+96897569605"><span class="cc" data-i18n="cc_om">Oman</span> <span dir="ltr">+968 9756 9605</span></a>
         </div>
       </div>
       <div class="copyright" data-i18n="footer_copy">© 2026 Wesam Abdelrahman Aboud. Prepared for banks, strategic partners, government entities, suppliers &amp; investors.</div>
@@ -525,6 +527,9 @@ const translations = {
                        ar:"يُقدَّم هذا الملف التعريفي لتعريف وسام عبدالرحمن عبود ونطاق أعماله، ولأغراض العلم فقط."},
   contact_eyebrow:{en:"Get in touch",ar:"تواصل معنا"},
   contact_title:{en:"Let's talk business.",ar:"لنتحدث عن الأعمال."},
+  cc_sy:{en:"Syria",ar:"سوريا"},
+  cc_ae:{en:"UAE",ar:"الإمارات"},
+  cc_om:{en:"Oman",ar:"عُمان"},
   footer_copy:{en:"© 2026 Wesam Abdelrahman Aboud. Prepared for banks, strategic partners, government entities, suppliers & investors.",
                ar:"© 2026 وسام عبدالرحمن عبود. مُعَدّ لمشاركته مع البنوك والشركاء الاستراتيجيين والجهات الحكومية والموردين والمستثمرين."}
 };
