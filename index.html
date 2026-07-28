@@ -7,7 +7,7 @@
 <meta name="description" content="Wesam Abdelrahman Aboud — Founder of five independently owned companies in agriculture, irrigation manufacturing, greenhouse construction and fertilizer production across the UAE and Oman.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#1c1c16;
@@ -26,7 +26,7 @@
     margin:0;
     background:var(--paper);
     color:var(--ink);
-    font-family:'Space Grotesk',sans-serif;
+    font-family:'Times New Roman', Times, Georgia, serif;
     -webkit-font-smoothing:antialiased;
   }
   body.ar{font-family:'Tajawal',sans-serif;}
@@ -50,7 +50,8 @@
   }
   h1,h2,h3{margin:0;line-height:1;}
   .display{
-    font-family:'Archivo Black',sans-serif;
+    font-family:'Times New Roman', Times, Georgia, serif;
+    font-weight:700;
     text-transform:uppercase;
     letter-spacing:-.01em;
   }
@@ -88,6 +89,18 @@
   .navburger{display:none;background:none;border:0;cursor:pointer;}
   @media (max-width:820px){
     .navlinks{display:none;}
+  }
+  @media (max-width:760px){
+    .hero{padding:40px 0 20px;}
+    .hero-grid{grid-template-columns:1fr;gap:36px;}
+    .portrait-stage{padding:0;max-width:340px;margin:0 auto;}
+    .block-olive{left:-16px;top:-16px;bottom:-16px;width:56px;}
+    .block-taupe{left:24px;top:34px;width:120px;height:70px;}
+    .portrait-frame{margin-left:28px;}
+    .portrait-photo{margin:-14px 0 0 -14px;width:calc(100% - 14px);}
+    .hero-copy{text-align:center;}
+    .bio-text{margin:0 auto;}
+    .cta-row{justify-content:center;}
   }
 
   /* ---------- HERO ---------- */
@@ -153,7 +166,7 @@
     padding:26px 0;border-bottom:1px solid var(--rule);
   }
   .timeline .year{
-    font-family:'Archivo Black',sans-serif;font-size:1.6rem;color:var(--olive);
+    font-family:'Times New Roman', Times, Georgia, serif;font-weight:700;font-size:1.6rem;color:var(--olive);
   }
   body.ar .timeline .year{font-family:'Tajawal',sans-serif;font-weight:900;}
   .timeline .co{font-weight:700;font-size:1.08rem;margin-bottom:6px;}
@@ -430,7 +443,7 @@ const translations = {
   closing_line:{en:'Five companies. <span class="accent">One continuous line of work</span> — from agricultural distribution to the manufacturing behind it.',
                 ar:'خمس شركات، <span class="accent">ومسار عمل واحد متصل</span> — من التوزيع الزراعي إلى التصنيع الذي يقف خلفه.'},
   closing_disclaimer:{en:"This profile introduces Wesam Abdelrahman Aboud and the scope of his work. It is provided for informational purposes and does not constitute an offer, solicitation, or request for capital.",
-                       ar:"يُقدَّم هذا الملف التعريفي لتعريف وسام عبدالرحمن عبود ونطاق أعماله، ولأغراض العلم فقط."},
+                       ar:"يُقدَّم هذا الملف التعريفي لتعريف وسام عبدالرحمن عبود ونطاق أعماله، ولأغراض العلم فقط، ولا يشكّل عرضاً أو طلباً لرأس المال."},
   contact_eyebrow:{en:"Get in touch",ar:"تواصل معنا"},
   contact_title:{en:"Let's talk business.",ar:"لنتحدث عن الأعمال."},
   footer_copy:{en:"© 2026 Wesam Abdelrahman Aboud. Prepared for banks, strategic partners, government entities, suppliers & investors.",
